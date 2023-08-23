@@ -10,9 +10,20 @@
 		D580058E2A93FF3B0071E62A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580058D2A93FF3B0071E62A /* AppDelegate.swift */; };
 		D58005902A93FF3B0071E62A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580058F2A93FF3B0071E62A /* SceneDelegate.swift */; };
 		D58005922A93FF3B0071E62A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005912A93FF3B0071E62A /* ViewController.swift */; };
-		D58005952A93FF3B0071E62A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58005932A93FF3B0071E62A /* Main.storyboard */; };
 		D58005972A93FF3C0071E62A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58005962A93FF3C0071E62A /* Assets.xcassets */; };
 		D580059A2A93FF3C0071E62A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58005982A93FF3C0071E62A /* LaunchScreen.storyboard */; };
+		D58005A52A9400040071E62A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005A42A9400040071E62A /* HomePresenter.swift */; };
+		D58005A82A94001B0071E62A /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005A72A94001B0071E62A /* HomeInteractor.swift */; };
+		D58005AB2A9400350071E62A /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005AA2A9400350071E62A /* HomeEntity.swift */; };
+		D58005AD2A9400560071E62A /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005AC2A9400560071E62A /* HomeRouter.swift */; };
+		D58005B22A953C1C0071E62A /* SongListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005B12A953C1C0071E62A /* SongListRow.swift */; };
+		D58005B52A953C670071E62A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005B42A953C670071E62A /* View+Extension.swift */; };
+		D58005B72A953F400071E62A /* SongListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005B62A953F400071E62A /* SongListRowView.swift */; };
+		D58005B92A95E1A10071E62A /* HomeDataBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005B82A95E1A10071E62A /* HomeDataBinder.swift */; };
+		D58005BB2A95F4FD0071E62A /* SongListRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005BA2A95F4FD0071E62A /* SongListRowViewModel.swift */; };
+		D58005C42A9610B00071E62A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005C22A9610B00071E62A /* Endpoint.swift */; };
+		D58005C52A9610B00071E62A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005C32A9610B00071E62A /* APIClient.swift */; };
+		D58005C72A9646900071E62A /* DataBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005C62A9646900071E62A /* DataBinder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +31,21 @@
 		D580058D2A93FF3B0071E62A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D580058F2A93FF3B0071E62A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D58005912A93FF3B0071E62A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D58005942A93FF3B0071E62A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D58005962A93FF3C0071E62A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D58005992A93FF3C0071E62A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D580059B2A93FF3C0071E62A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D58005A42A9400040071E62A /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		D58005A72A94001B0071E62A /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		D58005AA2A9400350071E62A /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		D58005AC2A9400560071E62A /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		D58005B12A953C1C0071E62A /* SongListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListRow.swift; sourceTree = "<group>"; };
+		D58005B42A953C670071E62A /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		D58005B62A953F400071E62A /* SongListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListRowView.swift; sourceTree = "<group>"; };
+		D58005B82A95E1A10071E62A /* HomeDataBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataBinder.swift; sourceTree = "<group>"; };
+		D58005BA2A95F4FD0071E62A /* SongListRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListRowViewModel.swift; sourceTree = "<group>"; };
+		D58005C22A9610B00071E62A /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		D58005C32A9610B00071E62A /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		D58005C62A9646900071E62A /* DataBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBinder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +78,90 @@
 		D580058C2A93FF3B0071E62A /* RomoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				D58005A22A93FFE00071E62A /* Home */,
 				D580058D2A93FF3B0071E62A /* AppDelegate.swift */,
 				D580058F2A93FF3B0071E62A /* SceneDelegate.swift */,
-				D58005912A93FF3B0071E62A /* ViewController.swift */,
-				D58005932A93FF3B0071E62A /* Main.storyboard */,
 				D58005962A93FF3C0071E62A /* Assets.xcassets */,
 				D58005982A93FF3C0071E62A /* LaunchScreen.storyboard */,
 				D580059B2A93FF3C0071E62A /* Info.plist */,
 			);
 			path = RomoPlayer;
+			sourceTree = "<group>";
+		};
+		D58005A12A93FFD80071E62A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D58005912A93FF3B0071E62A /* ViewController.swift */,
+				D58005B12A953C1C0071E62A /* SongListRow.swift */,
+				D58005B62A953F400071E62A /* SongListRowView.swift */,
+				D58005BA2A95F4FD0071E62A /* SongListRowViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D58005A22A93FFE00071E62A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D58005B32A953C590071E62A /* Common */,
+				D58005AE2A9401C40071E62A /* Router */,
+				D58005A92A9400280071E62A /* Entity */,
+				D58005A62A94000D0071E62A /* Interactor */,
+				D58005A32A93FFEB0071E62A /* Presenter */,
+				D58005A12A93FFD80071E62A /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D58005A32A93FFEB0071E62A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D58005A42A9400040071E62A /* HomePresenter.swift */,
+				D58005B82A95E1A10071E62A /* HomeDataBinder.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D58005A62A94000D0071E62A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D58005A72A94001B0071E62A /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D58005A92A9400280071E62A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D58005AA2A9400350071E62A /* HomeEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		D58005AE2A9401C40071E62A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D58005AC2A9400560071E62A /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D58005B32A953C590071E62A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D58005BD2A9610850071E62A /* Network */,
+				D58005B42A953C670071E62A /* View+Extension.swift */,
+				D58005C62A9646900071E62A /* DataBinder.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D58005BD2A9610850071E62A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D58005C32A9610B00071E62A /* APIClient.swift */,
+				D58005C22A9610B00071E62A /* Endpoint.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +224,6 @@
 			files = (
 				D580059A2A93FF3C0071E62A /* LaunchScreen.storyboard in Resources */,
 				D58005972A93FF3C0071E62A /* Assets.xcassets in Resources */,
-				D58005952A93FF3B0071E62A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +234,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58005B72A953F400071E62A /* SongListRowView.swift in Sources */,
+				D58005C52A9610B00071E62A /* APIClient.swift in Sources */,
 				D58005922A93FF3B0071E62A /* ViewController.swift in Sources */,
+				D58005AB2A9400350071E62A /* HomeEntity.swift in Sources */,
+				D58005C42A9610B00071E62A /* Endpoint.swift in Sources */,
+				D58005C72A9646900071E62A /* DataBinder.swift in Sources */,
+				D58005AD2A9400560071E62A /* HomeRouter.swift in Sources */,
+				D58005BB2A95F4FD0071E62A /* SongListRowViewModel.swift in Sources */,
 				D580058E2A93FF3B0071E62A /* AppDelegate.swift in Sources */,
 				D58005902A93FF3B0071E62A /* SceneDelegate.swift in Sources */,
+				D58005A82A94001B0071E62A /* HomeInteractor.swift in Sources */,
+				D58005A52A9400040071E62A /* HomePresenter.swift in Sources */,
+				D58005B52A953C670071E62A /* View+Extension.swift in Sources */,
+				D58005B92A95E1A10071E62A /* HomeDataBinder.swift in Sources */,
+				D58005B22A953C1C0071E62A /* SongListRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D58005932A93FF3B0071E62A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D58005942A93FF3B0071E62A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D58005982A93FF3C0071E62A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,11 +387,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3QSMGP9ZU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RomoPlayer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RomoPlayer;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "the app needs to be allowed to play Media content";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -314,11 +417,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3QSMGP9ZU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RomoPlayer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RomoPlayer;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "the app needs to be allowed to play Media content";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
