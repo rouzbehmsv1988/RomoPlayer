@@ -8,24 +8,20 @@
 import UIKit
 
 extension UIView {
-    func addLeading(to view: UIView, constant: CGFloat = 0) -> UIView {
+    func addLeading(to view: UIView, constant: CGFloat = 0) {
         leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: constant).isActive = true
-        return self
     }
     
-    func addTrailing(to view: UIView, constant: CGFloat = 0) -> UIView {
+    func addTrailing(to view: UIView, constant: CGFloat = 0){
         trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -constant).isActive = true
-        return self
     }
     
-    func addBottom(to view: UIView, constant: CGFloat = 0) -> UIView {
+    func addBottom(to view: UIView, constant: CGFloat = 0){
         bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -constant).isActive = true
-        return self
     }
     
-    func addTop(to view: UIView, constant: CGFloat = 0) -> UIView {
+    func addTop(to view: UIView, constant: CGFloat = 0)  {
         topAnchor.constraint(equalTo: view.topAnchor, constant: constant).isActive = true
-        return self
     }
     
     func addConstraintsToEdges(of view: UIView, insets: UIEdgeInsets = .zero) {

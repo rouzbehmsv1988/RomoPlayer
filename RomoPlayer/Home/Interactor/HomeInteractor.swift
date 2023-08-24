@@ -10,18 +10,17 @@ import MusicKit
 class HomeInteractor: HomeInteractorInputProtocol {
     weak var presenter: HomePresenterProtocol?
 
-    func fetchItems() {
+    func fetchItems(_ text: String?) {
         // Fetch data and then notify the presenter
-        authorizeMusic()
+        guard let searchText = text else { return }
+        authorizeMusic(searchText)
     }
     private var songs: [SongItem] = []
-    private let request: MusicCatalogSearchRequest = {
-        var request = MusicCatalogSearchRequest(term: "Hello", types: [Song.self])
-        request.limit = 25
-        return request
-    }()
-    func authorizeMusic() {
+
+    func authorizeMusic(_ text: String) {
         Task {
+            var request = MusicCatalogSearchRequest(term: text, types: [Song.self])
+            request.limit = 25
             let status = await MusicAuthorization.request()
             switch status {
             case .authorized:

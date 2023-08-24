@@ -20,14 +20,34 @@ class HomeViewController: UIViewController, HomeViewProtocol {
         table.backgroundColor = .gray
         return table
     }()
+    
+    lazy var seachTextField: UITextField = {
+        let textField = UITextField()
+        textField.backgroundColor = .white
+        textField.textColor = .darkText
+        textField.layer.borderColor = UIColor.gray.cgColor
+        textField.layer.borderWidth = 1
+        textField.layer.cornerRadius = 10
+        textField.placeholder = "search text"
+        return textField
+    }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.fetchData()
         tableView.delegate = presenter?.dataBinder
         tableView.dataSource = presenter?.dataBinder
-        tableView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height)
         tableView.register(SongListRow.self, forCellReuseIdentifier: "SongListRow")
         view.addSubview(tableView)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.addConstraintsToEdges(of: view, insets: UIEdgeInsets(top: 120, left: 8, bottom: 8, right: 8))
+        view.addSubview(seachTextField)
+        seachTextField.translatesAutoresizingMaskIntoConstraints = false
+        seachTextField.addLeading(to: view, constant: 8)
+        seachTextField.addTrailing(to: view, constant: 8)
+        seachTextField.addTop(to: view, constant: 60)
+        seachTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        seachTextField.delegate = presenter?.dataBinder
         view.backgroundColor = .white
     }
     

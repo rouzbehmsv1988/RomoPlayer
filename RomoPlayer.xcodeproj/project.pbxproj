@@ -18,11 +18,7 @@
 		D58005AD2A9400560071E62A /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005AC2A9400560071E62A /* HomeRouter.swift */; };
 		D58005B22A953C1C0071E62A /* SongListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005B12A953C1C0071E62A /* SongListRow.swift */; };
 		D58005B52A953C670071E62A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005B42A953C670071E62A /* View+Extension.swift */; };
-		D58005B72A953F400071E62A /* SongListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005B62A953F400071E62A /* SongListRowView.swift */; };
 		D58005B92A95E1A10071E62A /* HomeDataBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005B82A95E1A10071E62A /* HomeDataBinder.swift */; };
-		D58005BB2A95F4FD0071E62A /* SongListRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005BA2A95F4FD0071E62A /* SongListRowViewModel.swift */; };
-		D58005C42A9610B00071E62A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005C22A9610B00071E62A /* Endpoint.swift */; };
-		D58005C52A9610B00071E62A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005C32A9610B00071E62A /* APIClient.swift */; };
 		D58005C72A9646900071E62A /* DataBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005C62A9646900071E62A /* DataBinder.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,11 +36,7 @@
 		D58005AC2A9400560071E62A /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		D58005B12A953C1C0071E62A /* SongListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListRow.swift; sourceTree = "<group>"; };
 		D58005B42A953C670071E62A /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
-		D58005B62A953F400071E62A /* SongListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListRowView.swift; sourceTree = "<group>"; };
 		D58005B82A95E1A10071E62A /* HomeDataBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataBinder.swift; sourceTree = "<group>"; };
-		D58005BA2A95F4FD0071E62A /* SongListRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListRowViewModel.swift; sourceTree = "<group>"; };
-		D58005C22A9610B00071E62A /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		D58005C32A9610B00071E62A /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		D58005C62A9646900071E62A /* DataBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBinder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,8 +85,6 @@
 			children = (
 				D58005912A93FF3B0071E62A /* ViewController.swift */,
 				D58005B12A953C1C0071E62A /* SongListRow.swift */,
-				D58005B62A953F400071E62A /* SongListRowView.swift */,
-				D58005BA2A95F4FD0071E62A /* SongListRowViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,20 +138,10 @@
 		D58005B32A953C590071E62A /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				D58005BD2A9610850071E62A /* Network */,
 				D58005B42A953C670071E62A /* View+Extension.swift */,
 				D58005C62A9646900071E62A /* DataBinder.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		D58005BD2A9610850071E62A /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				D58005C32A9610B00071E62A /* APIClient.swift */,
-				D58005C22A9610B00071E62A /* Endpoint.swift */,
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,14 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D58005B72A953F400071E62A /* SongListRowView.swift in Sources */,
-				D58005C52A9610B00071E62A /* APIClient.swift in Sources */,
 				D58005922A93FF3B0071E62A /* ViewController.swift in Sources */,
 				D58005AB2A9400350071E62A /* HomeEntity.swift in Sources */,
-				D58005C42A9610B00071E62A /* Endpoint.swift in Sources */,
 				D58005C72A9646900071E62A /* DataBinder.swift in Sources */,
 				D58005AD2A9400560071E62A /* HomeRouter.swift in Sources */,
-				D58005BB2A95F4FD0071E62A /* SongListRowViewModel.swift in Sources */,
 				D580058E2A93FF3B0071E62A /* AppDelegate.swift in Sources */,
 				D58005902A93FF3B0071E62A /* SceneDelegate.swift in Sources */,
 				D58005A82A94001B0071E62A /* HomeInteractor.swift in Sources */,

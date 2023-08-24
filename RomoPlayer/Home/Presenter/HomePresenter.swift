@@ -19,13 +19,25 @@ protocol HomePresenterProtocol: AnyObject {
 
 protocol HomeInteractorInputProtocol: AnyObject {
     var presenter: HomePresenterProtocol? { get set }
-    func fetchItems()
+    func fetchItems(_ text: String?)
+    
 }
 
 
 
 
-class HomePresenter: HomePresenterProtocol, DataBindingDelegation {
+class HomePresenter: HomePresenterProtocol, DataBindingDelegation, searchDelegate {
+    var workItem: DispatchWorkItem?
+    func searchForText(_ text: String?) {
+        workItem?.cancel()
+        let task  =  DispatchWorkItem { [weak self] in
+            self?.interactor?.fetchItems(text)
+        }
+        workItem = task
+        DispatchQueue.global(qos: .userInteractive).asyncAfter(deadline: .now() + 1.0, execute: task)
+       
+    }
+    
     func didSelect(_ data: CellDataConformable) {
         
     }
@@ -36,9 +48,10 @@ class HomePresenter: HomePresenterProtocol, DataBindingDelegation {
     init() {
         self.dataBinder = HomeDataBinder()
         dataBinder?.delegate = self
+        dataBinder?.searchDelegate = self
     }
     func fetchData() {
-        interactor?.fetchItems()
+   
     }
     
     func itemsFetched(_ items: [SongItem]) {

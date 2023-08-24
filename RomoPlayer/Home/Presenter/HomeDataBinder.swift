@@ -9,7 +9,7 @@ import UIKit
 
 
 class HomeDataBinder: DataBinder {
-  
+    weak var searchDelegate: searchDelegate?
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let identifier = "SongListRow" // Make sure this identifier matches the one you set in your storyboard or cell registration
            
@@ -25,4 +25,13 @@ class HomeDataBinder: DataBinder {
            return cell
     }
     
+}
+protocol searchDelegate: AnyObject {
+    func searchForText(_ text: String?)
+}
+extension HomeDataBinder: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        searchDelegate?.searchForText(textField.text)
+        return true
+    }
 }
